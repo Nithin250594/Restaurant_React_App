@@ -69,8 +69,9 @@ export const CountDiv = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 5px;
-  font-size: 21px;
+  font-size: 18px;
   @media screen and (max-width: 768px) {
+  font-size: 21px;
     width: 145px;
     height: 50px;
     padding: 10px;
