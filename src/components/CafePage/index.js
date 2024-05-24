@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
 import CafeNavBar from '../CafeNavBar'
+import MenuItems from '../MenuItems'
 
 import {CategoryList, CategoryItem} from './styledComponents'
 
@@ -32,7 +33,7 @@ const CafePage = () => {
     cafeData.length > 0
       ? cafeData[0].table_menu_list.map(e => e.menu_category)
       : []
-  console.log(MenuCategory)
+  // console.log(MenuCategory)
 
   return (
     <>
@@ -48,6 +49,7 @@ const CafePage = () => {
           </CategoryItem>
         ))}
       </CategoryList>
+      <MenuItems activeCategory={activeCategory} />
     </>
   )
 }
